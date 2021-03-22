@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Fractured Hub">
+    <output-path>$PROJECT_DIR$/out/artifacts/Fractured_Hub</output-path>
+    <root id="archive" name="Fractured Hub.jar">
+      <element id="module-output" name="Fractured Hub" />
+    </root>
+  </artifact>
+</component>

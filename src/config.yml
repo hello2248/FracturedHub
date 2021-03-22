@@ -1,0 +1,61 @@
+#Guide to inventory slots -> https://bit.ly/3euW3xZ
+#List of materials -> https://helpch.at/docs/1.8/org/bukkit/Material.html
+#List of sounds -> https://helpch.at/docs/1.8/org/bukkit/Sound.html
+#List of firework effects https://helpch.at/docs/1.8/org/bukkit/FireworkEffect.Type.html
+serverSelector:
+  slot: 1
+  item:
+    name: "&6Server Selector"
+    material: COMPASS
+
+playerVisibility:
+  slot: 3
+  itemWhenVisible:
+    name: '&aHide Players'
+    material: INK_SACK
+    durability: 10
+  itemWhenInvisible:
+    name: '&7Show Players'
+    material: INK_SACK
+    durability: 8
+
+launchPads:
+  pressurePlate: GOLD_PLATE
+  yVelocity: 3
+  #Horizontal velocity will be calculated by (speed player is moving) * (multiplier) + (base value)
+  xVelocityBaseValue: 5
+  xVelocityMultiplier: 3
+
+doubleJumpYVelocity: 3
+doubleJumpCooldown: 2
+
+loginEffects:
+  sound:
+    enabled: true
+    soundToPlay: LEVEL_UP
+  title:
+    enabled: true
+    titleText: "&6Welcome"
+    subtitleText: "&0- Fractured"
+
+  firework:
+    enabled: true
+    power: 1
+    flicker: false
+    trail: true
+    #Colours in RGB format
+    colours:
+      - 28,28,28
+      - 150,150,150
+    fadeColours:
+      - 24,24,24
+    effect: STAR
+
+#Strings must be kept under 16 characters
+#{serverName} will be the player count of that server name
+scoreboard:
+  title: " &0Fractured "
+  scoreboardLines:
+    - " "
+    - "&0Skyblock: &f{skyblock}"
+  secondsBetweenUpdates: 5

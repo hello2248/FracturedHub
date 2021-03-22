@@ -1,0 +1,16 @@
+main: HubMain
+author: hello2248
+version: 1.0
+name: Fractured Hub
+depend: [Fractured_Server_Commands]
+permissions:
+  hub.admin:
+    description: Allow building in the hub
+    default: op
+commands:
+  setspawn:
+    description: Set the spawn for the hub
+    default: op
+  removespawn:
+    description: Delete the hub's spawnpoint
+    default: op
